@@ -1,6 +1,6 @@
-(ns main
+(ns javalin.main
   (:gen-class)
-  (:require [javalin-clojure.fw :refer :all]))
+  (:require [javalin.fw :refer :all]))
 
 (defn say-hello []
   "Hello World")
@@ -13,6 +13,6 @@
    {:path "java" :handler say-java}])
 
 (defn -main
-  [& args]
+  [& _]
   (start-server routes))
 

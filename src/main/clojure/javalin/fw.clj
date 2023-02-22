@@ -1,4 +1,4 @@
-(ns javalin-clojure.fw
+(ns javalin.fw
   (:import (io.javalin Javalin)))
 
 (defn- get-handler [f]
